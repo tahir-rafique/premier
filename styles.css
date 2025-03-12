@@ -8,6 +8,7 @@ html,
 body {
   height: 100%;
   width: 100%;
+  background-color: #f8f8f8;
 }
 
 #main {
@@ -245,3 +246,87 @@ body {
   font-weight: 100;
   text-align: left;
 }
+
+/* page - 3 */
+
+.page3 {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  padding: 5vw 4vw;
+}
+
+.page3 > h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2vw;
+  letter-spacing: -3px;
+  font-weight: 900;
+  margin-bottom: 2vh;
+}
+
+.elem {
+  height: 16vh;
+  width: 100%;
+  border-top: 2px solid #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.2vw;
+  position: relative;
+  transition: all ease 1s;
+
+}
+
+.elem img {
+  height: 140px;
+  width: 140px;
+  position: absolute;
+  border-radius: 50%;
+  left: 15%;
+  opacity: 0;
+  transition: all ease 1.4s;
+  object-fit: cover;
+  object-position: top;
+  z-index: 10;
+}
+
+.elem h4 {
+  font-size: 1.5vw;
+  width: 6%;
+  text-transform: uppercase;
+}
+
+.elem:nth-last-child(1) {
+  border-bottom: 2px solid #000;
+}
+.elem:nth-last-child(1) img {
+  left: 45%;
+}
+
+.elem:nth-last-child(3) img {
+  left: 45%;
+}
+
+.elem .elem-part2 {
+  width: 45%;
+}
+
+.elem .elem-part2 h1 {
+  font-size: 2.3vw;
+  font-weight: 500;
+}
+
+.elem .elem-part2 h5 {
+  font-size: 0.9vw;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.elem:hover{
+  background-color: rgba(181, 181, 181, 0.23);
+}
+.elem:hover img {
+  opacity: 1;
+  left: 30%;
+}
+

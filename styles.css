@@ -275,7 +275,6 @@ body {
   padding: 0 1.2vw;
   position: relative;
   transition: all ease 1s;
-
 }
 
 .elem img {
@@ -322,11 +321,56 @@ body {
   font-weight: 600;
   text-transform: uppercase;
 }
-.elem:hover{
-  background-color: rgba(181, 181, 181, 0.23);
+.elem:hover {
+  background-color: rgba(181, 181, 181, 0.363);
 }
 .elem:hover img {
   opacity: 1;
   left: 30%;
 }
 
+/* Marque text */
+
+.marque {
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+.marque h1 {
+  display: inline-block;
+  font-size: 4vw;
+  text-transform: uppercase;
+  font-weight: 900;
+  -webkit-text-stroke: 2px black;
+  color: transparent;
+  margin-right: 16px;
+  /* total 20px hoga qqu ky bydefault 4px gap leta hia white-space:nowrape; jo ky ess ky parent .marque mein keea hua hia */
+
+  animation-name: animeLetterMove;
+  animation-duration: 4s;
+  animation-iteration-count:infinite;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  letter-spacing: 3px;
+
+}
+
+@keyframes animeLetterMove {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-100% - 20px));
+    /* jo jatka animation main lagta tah wo 20px ga kee waja sy sy tou calc() sy usyy remove kar dea */
+  }
+}
+/* Footer */
+.footer {
+  height: 100%;
+  width: 100%;
+}
